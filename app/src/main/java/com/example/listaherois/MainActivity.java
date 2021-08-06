@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> AdapterView, View view, int i, long l) {
                 Toast.makeText(getApplicationContext(), "Você selecionou a heroína:"+nomeHero[i], Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), visualiza_heroi_layout.class);
-                intent.putExtra("nomeHero", nomeHero[i]);
+                intent.putExtra("nomehero", nomeHero[i]);
                 intent.putExtra("imghero", imghero[i]);
                 startActivity(intent);
             }
